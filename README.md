@@ -7,3 +7,7 @@ This is first ML project
 2. Heroku account
 3. VS Code IDE
 4. GIT cli
+
+# Create conda environment
+
+conda create -p venv python==3.9 -y
