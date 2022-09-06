@@ -10,7 +10,9 @@ This is first ML project
 
 # Create conda environment # -p means the venv file will get created in this project itself
 '''
+
 conda create -p venv python==3.9    
+
 '''
 
 '''
@@ -55,12 +57,19 @@ To check remote url
 git remote -v
 '''
 
+To setup CI/CD pipeline in heroku we need 3 information
 
-BUILD DOCEKT IMAGE
+1. HEROKU_EMAIL = ankurshrivastava020@gmail.com
+2. HEROKU_API_KEY = 7b71208b-5959-48b1-98e9-c6d91ecf3b15
+3. HEROKU_APP_NAME = pehla-ml-project
 
+
+BUILD DOCKER IMAGE
+```
 docker build -t <image_name>:<tagname> .
+```
 
->image name should be in lowercase
+>Note :- image name for docker should be in lowercase
 
 TO LIST DOCKER IMAGES
 \\\ docker image \\\
@@ -75,9 +84,9 @@ TO CHECK RUNNING CONTAINER IN DOCKER
  \\\  docker stop <container_id> \\\
  
 
- \\\
+ ```
  python setup.py install
- \\\
+ ```
 
 Install ipynbkernal
 
