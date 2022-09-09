@@ -15,7 +15,7 @@ REQUIREMENT_FILE_NAME="requirements.txt"
 
 def get_requirements_list()->List[str]:
     with open("REQUIREMENT_FILE_NAME") as requirement_file:
-        return requirement_file.readlines().pop("-e .")
+        return requirement_file.readlines().remove("-e .")
 
 
 setup(
@@ -26,4 +26,5 @@ description=DESCRIPTION,
 packages=find_packages(),
 install_requires=get_requirements_list()
 )
+
  

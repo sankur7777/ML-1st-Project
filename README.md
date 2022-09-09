@@ -88,7 +88,7 @@ TO CHECK RUNNING CONTAINER IN DOCKER
  python setup.py install
  ```
 
-Install ipynbkernal
+Install ipykernal
 
 \\\
 
